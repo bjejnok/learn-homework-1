@@ -14,14 +14,28 @@
     Программа: Программирую
     
 """
+from datetime import *
+nowtime = datetime.now()
+nowdate = str(date.today())
+nowdate = nowdate.replace('-', '/')
 
-questions_and_answers = {}
+questions_and_answers = {
+    "как дела?": "Хорошо!", 
+    "что делаешь?": "Программирую",
+    "сколько времени?": nowtime.strftime("%H:%M"),
+    "какое сегодня число?": nowdate,
+    "почем гречка?": "100 рублей за кг",
+    "отель?": "Триваго!"
+}
 
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
+    while True:
+      ask = input("Задайте вопрос: ")
+      if ask in questions_and_answers:
+          answer = questions_and_answers[ask]
+      else: answer = "Вопроса нет в списке"   
+      print(answer)   
+
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)

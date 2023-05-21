@@ -14,12 +14,24 @@
 
 """
 
+print(0.1 + 0.2)
+'''
+
+person_age = abs(int(input()))
+
+def activity(age):
+    if age < 7:
+        return 'Детский сад'
+    elif age in range(8, 19):
+        return 'Школа' 
+    elif age in range(19, 26): ``
+        return 'ВУЗ'
+    else: return 'Работа'
+
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+    person_activity = activity(person_age)
+    print(person_activity)
 
 if __name__ == "__main__":
     main()
+'''
