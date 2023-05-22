@@ -39,8 +39,6 @@ def planets(command):
         E_planet = ephem.Mercury(nowdate)
     elif planet == 'Venus':
         E_planet = ephem.Venus(nowdate)
-    elif planet == 'Earth':
-        E_planet = ephem.Earth(nowdate)
     elif planet == 'Jupiter':
         E_planet = ephem.Jupiter(nowdate) 
     elif planet == 'Saturn':
